@@ -1,0 +1,29 @@
+package com.in28minutes.learn_spring_framework.examples.a1;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+@Configuration
+@ComponentScan
+public class DepinjectionLuncherApplication {
+    
+    public static void main(String[] args) {
+
+        try (var context = new AnnotationConfigApplicationContext(DepinjectionLuncherApplication.class)){
+
+            Arrays.stream(context.getBeanDefinitionNames())
+            .forEach(System.out::println);
+
+        }
+
+
+
+
+        
+    }
+}
