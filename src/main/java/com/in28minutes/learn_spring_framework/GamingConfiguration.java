@@ -22,15 +22,6 @@ public class GamingConfiguration {
         var gameRunner = new GameRunner(game);
         return gameRunner;
     }
-
-
-
-
-       
-
-
-
-        
-        
+  
     
 }
