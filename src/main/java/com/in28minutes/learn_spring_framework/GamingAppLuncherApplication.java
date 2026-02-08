@@ -10,13 +10,13 @@ import com.in28minutes.learn_spring_framework.game.GamingConsole;
 
 @Configuration
 @ComponentScan("com.in28minutes.learn_spring_framework.game")
-public class App03GamingSpringBeans {
+public class GamingAppLuncherApplication {
     
    
 
     public static void main(String[] args) {
 
-        try (var context = new AnnotationConfigApplicationContext(App03GamingSpringBeans.class)){
+        try (var context = new AnnotationConfigApplicationContext(GamingAppLuncherApplication.class)){
 
         context.getBean(GamingConsole.class).up(); 
 
